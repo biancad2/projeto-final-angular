@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <h1 class="text-center">Histórico de matérias cursadas</h1>
+    <table class="table table-hover" *ngFor="let cursada of cursadas; index as indexSemester">
+        <caption class="text-center titulo">{{cursada.semester}}º semestre</caption>
+        <thead>
+            <tr>
+                <th>Sigla</th>
+                <th>Disciplina</th>
+                <th>Status</th>
+                <th>Horário</th>
+                <th>Quantidade de aulas</th>
+                <th>Nota final</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let subject of cursada.subjects; index as indexSubject" class="details" [routerLink]="['/cursadas', indexSemester, indexSubject]">
+                <td>{{subject.initials}}</td>
+                <td>{{subject.title}}</td>
+                <td>{{subject.status}}</td>
+                <td>{{subject.day}} - {{subject.startTime}} às {{subject.endTime}}</td>
+                <td>{{subject.qtAulas}}</td>
+                <td>{{subject.nf}}</td>
+                <td><a>Ver detalhes</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

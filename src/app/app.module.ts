@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MateriasCursadasComponent } from './materias-cursadas/materias-cursadas.component';
+import { MateriasCursandoComponent } from './materias-cursando/materias-cursando.component';
+import { IndexComponent } from './index/index.component';
+import { MateriasCursadasDetailsComponent } from './materias-cursadas-details/materias-cursadas-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    MateriasCursadasComponent,
+    MateriasCursandoComponent,
+    IndexComponent,
+    MateriasCursadasDetailsComponent
   ],
   imports: [
     BrowserModule,

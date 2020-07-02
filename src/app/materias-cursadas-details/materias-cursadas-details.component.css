@@ -1,0 +1,12 @@
+.editar{
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.editar:hover{
+    color: gray;
+}
+
+.no-display{
+    display: none;
+}
