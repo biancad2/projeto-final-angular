@@ -1,0 +1,20 @@
+<div class="container alinhar">
+    <div class="editar" [routerLink]="['/cursando']"><i class="fas fa-arrow-left"></i> Voltar</div>
+    <div class="card col-md-10">
+        <div class="card-body">
+            <div class="text-right editar" (click)="this.edit()"><i class="fas fa-pencil-alt"></i></div>
+            <h2>{{cursando.title}}</h2>
+            <h3>{{cursando.initials}}</h3>
+            <h4>Objetivo</h4>
+            <p>{{cursando.goals}}</p>
+            <h4>Ementa</h4>
+            <p>{{cursando.summary}}</p>
+            <p>Professor: {{cursando.teacher}}</p>
+            <p>Horário: {{cursando.day}} - {{cursando.startTime}} às {{cursando.endTime}} </p>
+            <p id="text-nota">Nota final: {{cursando.nf}}</p>
+            <input class="no-display" #notainput id="input-nota" value="{{cursando.nf}}">
+            <button class="btn btn-primary no-display" (click)="this.save(notainput.value)" id="btn-salvar">Salvar</button>
+        </div>
+
+    </div>
+</div>

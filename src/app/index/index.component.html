@@ -1,1 +1,9 @@
-<p>index works!</p>
+<div>
+    <div class="quadrado text-center">
+        <h1 class="titulo">Bianca Duarte Santos Barreto</h1>
+        <p class="info">R.A: 0050831811005</p>
+        <p>Já cursou:<a [routerLink]="['/cursadas']" class="text-dark"> {{this.cursadasService.getCount()}} matérias<i class="fas fa-link"></i></a> </p>
+        <p>Está cursando: <a [routerLink]="['/cursando']" class="text-dark">{{this.cursandoService.tamanho()}} matérias <i class="fas fa-link"></i></a></p>
+    </div>
+    <img src="../../assets/imgs/estudante.png" class="profile-img">
+</div>

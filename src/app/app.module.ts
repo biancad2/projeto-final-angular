@@ -8,6 +8,7 @@ import { MateriasCursadasComponent } from './materias-cursadas/materias-cursadas
 import { MateriasCursandoComponent } from './materias-cursando/materias-cursando.component';
 import { IndexComponent } from './index/index.component';
 import { MateriasCursadasDetailsComponent } from './materias-cursadas-details/materias-cursadas-details.component';
+import { MateriasCursandoDetailsComponent } from './materias-cursando-details/materias-cursando-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MateriasCursadasDetailsComponent } from './materias-cursadas-details/ma
     MateriasCursadasComponent,
     MateriasCursandoComponent,
     IndexComponent,
-    MateriasCursadasDetailsComponent
+    MateriasCursadasDetailsComponent,
+    MateriasCursandoDetailsComponent
   ],
   imports: [
     BrowserModule,

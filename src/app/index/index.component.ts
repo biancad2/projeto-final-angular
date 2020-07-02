@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CursandoService } from '../services/cursando.service';
+import { CursadasService } from '../services/cursadas.service';
 
 @Component({
   selector: 'app-index',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cursandoService: CursandoService, public cursadasService: CursadasService) { }
 
   ngOnInit(): void {
+    this.cursandoService.tamanho();
+    this.cursadasService.materias();
   }
 
 }

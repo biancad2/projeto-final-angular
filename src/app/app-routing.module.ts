@@ -4,6 +4,7 @@ import { MateriasCursadasComponent } from './materias-cursadas/materias-cursadas
 import { MateriasCursandoComponent } from './materias-cursando/materias-cursando.component';
 import { IndexComponent } from './index/index.component';
 import { MateriasCursadasDetailsComponent } from './materias-cursadas-details/materias-cursadas-details.component';
+import { MateriasCursandoDetailsComponent } from './materias-cursando-details/materias-cursando-details.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'cursadas', component: MateriasCursadasComponent},
   {path: 'cursadas/:indexSemester/:indexSubject', component: MateriasCursadasDetailsComponent},
   {path: 'cursando', component: MateriasCursandoComponent},
+  {path: 'cursando/:index', component: MateriasCursandoDetailsComponent},
 ];
 
 @NgModule({

@@ -1,1 +1,25 @@
-<p>materias-cursando works!</p>
+<div class="container-fluid">
+    <h1 class="text-center">Matérias que estão sendo cursadas</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Sigla</th>
+                <th>Disciplina</th>
+                <th>Horário</th>
+                <th>Quantidade de aulas</th>
+                <th>Nota final</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cursando of this.cursandoService.list; index as index" class="details" [routerLink]="['/cursando', index]">
+                <td>{{cursando.initials}}</td>
+                <td>{{cursando.title}}</td>
+                <td>{{cursando.day}} - {{cursando.startTime}} às {{cursando.endTime}}</td>
+                <td>{{cursando.qtAulas}}</td>
+                <td>{{cursando.nf}}</td>
+                <td><a>Ver detalhes</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

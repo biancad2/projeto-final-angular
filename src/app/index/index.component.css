@@ -1,0 +1,33 @@
+.quadrado{
+    display:block;
+    width: 60%;
+    height: 50vh;
+    background-color: #FFF5EE;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    color: #4F4F4F;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 15%;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    top: 15%;
+    right: 32.5%;
+    padding: 2%;
+    border: 8px solid #FFF;
+}
+
+.titulo{
+    padding-top: 10%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #4F4F4F
+}
+
+.info{
+    font-size: 1rem;
+}
